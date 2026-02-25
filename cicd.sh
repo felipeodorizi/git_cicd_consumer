@@ -28,8 +28,8 @@ conda run -n cicd python /scripts/ioper/caem/develop/SMNA/git_cicd_consumer/send
 
 # --- Executa ecflow_client ---
 echo "Executando ecflow_client..."
-export ECF_HOST=linux-Lenovo-ideapad-330-15IKB
-export ECF_PORT=5500
+export ECF_HOST=caem.cptec.inpe.br
+export ECF_PORT=3141
 
 if ! ecflow_client --replace=/SMNA_PRE_OPER SMNA_PRE_OPER.def; then
   echo "❌ Erro ao executar ecflow_client"
