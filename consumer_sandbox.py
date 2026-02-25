@@ -51,9 +51,6 @@ while True:
             if event == "push" and ref in ["refs/heads/main", "refs/heads/develop"]:
                 print(f"Evento push detectado em {ref}, chamando script...")
                 # Executa script bash
-                subprocess.run(["./cicd.sh"], check=True)
-
-
-
+                subprocess.run(["./cicd.sh"])
 
     time.sleep(60)
