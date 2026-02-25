@@ -23,6 +23,6 @@ if __name__ == '__main__':
             print("Failed:", e)
             sys.exit(1)   # retorna código de erro para o bash
 
-
     else:
         print("Provide a suite definition file as argument. Ex: ./validade.py suite.def")
+
