@@ -17,7 +17,7 @@ conda run -n cicd python /scripts/ioper/caem/develop/SMNA/git_cicd_consumer/send
 
 # --- Valida suite ---
 echo "Validando suite..."
-if ! conda run -n ecflow_env python /scripts/ioper/caem/develop/SMNA/git_cicd_consumer/validatesuite.py SMNA_PRE_OPER.def; then
+if ! conda run -n cicd python /scripts/ioper/caem/develop/SMNA/git_cicd_consumer/validatesuite.py SMNA_PRE_OPER.def; then
   echo "❌ Falha na validação da suite"
   conda run -n cicd python /scripts/ioper/caem/develop/SMNA/git_cicd_consumer/send_telegram_message.py "❌ Falha na validação da suite"
   exit 1
